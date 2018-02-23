@@ -35,7 +35,7 @@ public class BoschService {
         setOffering(consumer.subscribeByOfferingId(getProperties().getOfferingID()).get());
     }
 
-    public String requestAirQualityForLast24H(long longitude, long latitude, int radius) throws ExecutionException,
+    public String requestAirQualityForLast24H(String longitude, String latitude, int radius) throws ExecutionException,
             InterruptedException {
         AccessParameters accessParameters = AccessParameters.create();
         accessParameters

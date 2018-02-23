@@ -23,8 +23,8 @@ public class BoschController {
     }
 
     @RequestMapping(value = "/airQuality", method = RequestMethod.GET, produces = "application/json")
-    public AirQualityResponse airQuality(@RequestParam(value="longitude") long longitude, @RequestParam
-            (value="latitude") long latitude, @RequestParam(value="radius") int radius) throws ExecutionException,
+    public AirQualityResponse airQuality(@RequestParam(value="longitude") String longitude, @RequestParam
+            (value="latitude") String latitude, @RequestParam(value="radius") int radius) throws ExecutionException,
             InterruptedException {
         return new AirQualityResponse(getService().requestAirQualityForLast24H(longitude, latitude, radius));
     }
