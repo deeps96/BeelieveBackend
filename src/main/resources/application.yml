@@ -1,7 +1,0 @@
-bosch:
-  consumerID: 'Beelievers-Beelieve'
-  secret: 'CxEbUu8RSgOA48Ooiu_T0Q=='
-  offeringID: 'Bosch_CR-AirQualityDataService-AirQualityData_Offering'
-  marketplaceURI: 'https://market.big-iot.org'
-server:
-  port: 2151
